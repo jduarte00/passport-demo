@@ -16,7 +16,7 @@ const User         = require('./models/user')
 const flash        = require('connect-flash')
 
 mongoose
-  .connect('mongodb://localhost/passport-demo', {useNewUrlParser: true})
+  .connect('mongodb://uno:unodos1@ds211875.mlab.com:11875/pruebita', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
